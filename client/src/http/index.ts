@@ -1,5 +1,5 @@
 import axios, {InternalAxiosRequestConfig} from "axios";
-const REACT_APP_API_URL = 'http://localhost:4444/'
+const REACT_APP_API_URL=import.meta.env.VITE_API_URL;
 
 const $host = axios.create({
     baseURL: REACT_APP_API_URL

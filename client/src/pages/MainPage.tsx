@@ -271,9 +271,12 @@ function MainPage() {
                                          setLimit(Number(e.target.value))
                                      }}
                         >
-                            <option value="10">10</option>
                             {
-                                data.totalCount > 30 &&
+                                data.totalCount > 10 &&
+                                <option value="10">10</option>
+                            }
+                            {
+                            data.totalCount > 30 &&
                                 <option value="30">30</option>
                             }
                             <option value={data.totalCount}>{data.totalCount}</option>
